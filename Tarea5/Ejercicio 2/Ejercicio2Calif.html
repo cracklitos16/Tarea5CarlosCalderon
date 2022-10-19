@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de Calificaciones</title>
+
+    <style>
+		.container {
+			width: 70%;
+			margin: auto;
+			text-align: center;
+		}
+                  
+		
+		body {
+			background-color: #042f4b;
+			margin: 0;
+		}
+
+		h1 {
+			margin: 30px;
+			font-family: "Lobster", cursive;
+			text-shadow: 5px 0 #232931;
+			font-size: 4.5rem;
+			color: #4ecca3;
+			text-align: center;
+		}
+
+		p {
+			font-size: 2rem;
+			color: #4ecca3;
+			font-family: Arial, cursive;
+		}
+
+		img {
+			width: 100%;
+		}
+
+		.bottom {
+			padding-top: 30px;
+		}
+
+		.butn {
+			background: #4ecca3;
+			font-family: Arial, cursive;
+			border-radius: 7px;
+			color: #ffff;
+			font-size: 30px;
+			padding: 16px 25px 16px 25px;
+			text-decoration: none;
+		}
+
+		.butn:hover {
+			background: #232931;
+			text-decoration: none;
+		}
+	</style>
+
+</head>
+<body>
+
+    <div class="container">
+		<h1>Iniciemos</h1>	
+	</div>
+
+	<div class="container bottom">
+		<button type="button" class="butn"
+			onClick="iniciar()">Iniciar</button>
+	</div>
+
+    <script>
+        function iniciar(){ 
+        var calif1 = parseFloat(prompt("Ingrese la primera calificación"));
+        var calif2 = parseFloat(prompt("Ingrese la segunda calificación"));
+        var calif3 = parseFloat(prompt("Ingrese la tercera calificación"));
+    
+        var promedio = ((calif1 + calif2 + calif3) / 3);
+        alert(+"El promedio es: "+ promedio );
+        if (promedio >= 5) {
+            alert("Usted esta aprobado")
+        }
+        else{
+            alert("Usted esta suspendido")
+        }
+    }
+    </script>
+</body>
+</html>
